@@ -1,5 +1,6 @@
 import type {AndroidPermissionMap} from './permissions.android';
 import type {IOSPermissionMap} from './permissions.ios';
+import {WebPermissionMap} from './permissions.web';
 
 const WINDOWS = Object.freeze({
   ACCESSORY_MANAGER: 'windows.permission.accessoryManager',
@@ -153,5 +154,6 @@ export type WindowsPermissionMap = typeof WINDOWS;
 export const PERMISSIONS = Object.freeze({
   ANDROID: {} as AndroidPermissionMap,
   IOS: {} as IOSPermissionMap,
+  WEB: {} as WebPermissionMap,
   WINDOWS,
 } as const);

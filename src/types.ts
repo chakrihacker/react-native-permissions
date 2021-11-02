@@ -1,5 +1,6 @@
 import type {AndroidPermissionMap} from './permissions.android';
 import type {IOSPermissionMap} from './permissions.ios';
+import type {WebPermissionMap} from './permissions.web';
 import type {WindowsPermissionMap} from './permissions.windows';
 import {ResultMap} from './results';
 
@@ -9,8 +10,9 @@ export type {Rationale} from 'react-native';
 
 export type AndroidPermission = Values<AndroidPermissionMap>;
 export type IOSPermission = Values<IOSPermissionMap>;
+export type WebPermission = Values<WebPermissionMap>;
 export type WindowsPermission = Values<WindowsPermissionMap>;
-export type Permission = AndroidPermission | IOSPermission | WindowsPermission;
+export type Permission = AndroidPermission | IOSPermission | WindowsPermission | WebPermission;
 
 export type PermissionStatus = Values<ResultMap>;
 
